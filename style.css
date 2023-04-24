@@ -1,0 +1,91 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+/* --- Variables --- */
+body {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6d5c5;
+    padding: 0.5em 1em;
+    border-bottom: 4px solid black;
+}
+
+#logo {
+    font-weight: bold;
+}
+
+#nav-buttons {
+    display: flex;
+    align-items: center;
+    gap:2em;
+}
+
+button {
+    border: none;
+    padding: 0 1rem;
+}
+
+main {
+    display: flex;
+    flex-flow: wrap;
+    gap: 3rem;
+    padding:10em 2em;
+}
+
+.main-boxes {
+    flex-basis: 31em;
+    border: 4px solid black;
+    padding: 1em 0.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    background-color: #d6d5c5;
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+
+.footer-title {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 280px;
+    text-align: center;
+}
